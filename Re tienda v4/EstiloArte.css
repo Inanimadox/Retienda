@@ -1,0 +1,191 @@
+*{
+	padding: 0px;
+	margin: 0px;
+  font-family: "consolas", regular;
+
+}
+html
+{
+  overflow-x:hidden;
+}
+
+body{
+	background: linear-gradient(90deg, rgba(187,99,173,1) 0%, rgba(121,200,233,1) 100%);
+	height: 3000px;
+}
+
+.menu, .menu ul, .menu li, .menu a {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.menu {
+  height: 40px;
+  width: 100%;
+  background-color: black;
+}
+
+.menu li {
+  position: relative;
+  list-style: none;
+  float: left;
+  display: block;
+  height: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.menu a {
+  display: block;
+  padding: 0 16px;
+  margin: 6px 0;
+  line-height: 28px;
+  text-decoration: none;
+  
+  font-family:"Consolas", Regular;
+  font-weight: bold;
+  font-size: 13px;
+  color: #fff;
+
+  /*border-left: 1px solid #393942 white;
+  border-right: 1px solid #4f5058 white;*/
+  transition: color .2s ease-in-out;
+}
+/*
+.menu li:first-child a {border-left: none;}
+.menu li:last-child a {border-right: none;}
+.menu li:hover > a {color: #0C0}
+*/
+.menu li:hover > a {color: mediumpurple;}
+
+
+.menu ul {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  
+  opacity: 0;
+  background: #222;
+  
+  border-radius: 0 0 5px 5px;
+  transition: opacity .20s ease .1s;
+}
+
+.menu li:hover > ul {opacity: 1;}
+
+.menu ul li {
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  
+  transition: height .25s ease .1s;
+}
+
+.menu li:hover > ul li {
+  height: 36px;
+  overflow: visible;
+  padding: 0;
+}
+
+.menu ul li a {
+  width: 130px;
+  padding: 4px 10px;
+  margin: 0;
+  border: none;
+  border-bottom: 1px solid #353539;
+}
+.menu ul li:last-child a { border: none; }
+
+.separacion{
+    
+      height: 50px;
+  width: 100%;
+  background-color: black;
+}
+
+.fondo{
+    background-image: url("masawa.png");
+    height: 3000px;
+    background-repeat: repeat;
+    background-size: cover;
+        overflow: hidden;
+}
+
+.hero-image {
+
+   background-image: url("aetheticarte.png");
+   background-color: #cccccc;
+   height: 93vh;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+}
+
+body {
+    background-image: linear-gradient( aqua , fuchsia 30%,darkviolet 50%);
+    height: 3000px;
+}
+/* aca empieza la animacion para el texto de entrada*/
+@keyframes tipsy {
+  0 {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  background-color: #2e2e31;
+}
+
+h1 {
+  color: #fffbf1;
+  text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+  font-size: 80px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: -3px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+h1:before,
+h1:after {
+  content: '';
+  padding: .9em .4em;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  top: 50%;
+  display: block;
+  border: 15px solid red;
+  transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  animation: 10s infinite alternate ease-in-out tipsy;
+}
+
+h1:before {
+  border-color: #d9524a #d9524a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  z-index: -1;
+}
+
+h1:after {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a;
+  box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+}
+  /*termina la animacion*/
+
+  h1
+  {
+
+    color: #FFFFFF;
+    color:  linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);
+    text-align: center;
+  }

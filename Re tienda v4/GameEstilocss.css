@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+  padding: 0px;
+}
+body{
+  background: rgb(0,255,243);
+background: linear-gradient(90deg, rgba(0,255,243,1) 0%, rgba(147,0,255,1) 50%, rgba(0,212,255,1) 100%);
+font-family: "Consolas", Regular;
+}
+
+
+.menu, .menu ul, .menu li, .menu a {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.menu {
+  height: 40px;
+  width: 100%;
+  background-color: black;
+}
+
+.menu li {
+  position: relative;
+  list-style: none;
+  float: left;
+  display: block;
+  height: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.menu a {
+  display: block;
+  padding: 0 16px;
+  margin: 6px 0;
+  line-height: 28px;
+  text-decoration: none;
+  
+  font-family:"Consolas", Regular;
+  font-weight: bold;
+  font-size: 13px;
+  color: #fff;
+
+  /*border-left: 1px solid #393942 white;
+  border-right: 1px solid #4f5058 white;*/
+  transition: color .2s ease-in-out;
+}
+/*
+.menu li:first-child a {border-left: none;}
+.menu li:last-child a {border-right: none;}
+.menu li:hover > a {color: #0C0}
+*/
+.menu li:hover > a {color: mediumpurple;}
+
+
+.menu ul {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  
+  opacity: 0;
+  background: #222;
+  
+  border-radius: 0 0 5px 5px;
+  transition: opacity .20s ease .1s;
+}
+
+.menu li:hover > ul {opacity: 1;}
+
+.menu ul li {
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  
+  transition: height .25s ease .1s;
+}
+
+.menu li:hover > ul li {
+  height: 36px;
+  overflow: visible;
+  padding: 0;
+}
+
+.menu ul li a {
+  width: 130px;
+  padding: 4px 10px;
+  margin: 0;
+  border: none;
+  border-bottom: 1px solid #353539;
+}
+.menu ul li:last-child a { border: none; }
+
+
+ main{
+  width: 730px;
+  margin: 30px auto;
+  display:  flex;
+  align-items: center;
+
+ }
+ .section1
+ {
+  background-color: rgb(255, 255, 255, 0.2);
+    padding: 0 10px 10px 10px;
+  border-radius: 8px;
+ }
+ h1
+ {
+  text-align: center;
+ }
+ button
+ {
+  height: 100px;
+  width: 100px;
+  font-size: 40px;
+ }
+ button:hover
+ {
+  cursor:pointer;
+ }
+ .section2
+ {
+    background-color: rgb(255, 255, 255, 0.2);
+    width: 250px;
+    height: 400px;
+    padding: 0 20px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+ }
+ .estadisticas
+ {
+  border: 1px solid white;
+  height: 105px;
+  border-radius: 8px;
+  padding: 8px 20px;
+  box-sizing: border-box;
+ }
+
+ footer{
+  text-align: center;
+ }
+ a{
+  text-decoration: none;
+ }
